@@ -9,3 +9,7 @@ ActiveRecord::Base.establish_connection(
 get '/' do
   "THIS WORKS"
 end
+
+get '/api' do
+  Place.all.to_json
+end
